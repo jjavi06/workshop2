@@ -7,7 +7,7 @@
             //Declaración de variables
             int rival=0, girona, punts=0, guanyats=0, perduts=0, empatats=0, cont=0;
             string linia;
-            StreamReader arxiu = new StreamReader("lliga2324.txt");
+            StreamReader arxiu = new StreamReader("Girona lliga23_24_v2.txt");
 
             //demanar primer valor
             linia = arxiu.ReadLine();
@@ -35,6 +35,7 @@
                 //demanar segon valor
                 linia = arxiu.ReadLine();
             }
+            Console.WriteLine($"Partits guanyats: {guanyats}\nPartits perduts: {perduts}\nPartits empatats: {empatats}\nPunts: {punts}");
         }
     }
 }
